@@ -6,8 +6,8 @@
 		<title>@yield('title')</title>
 		 <link href="https://fonts.googleapis.com/css?family=Alegreya|Monda|Taviraj" rel="stylesheet"> 
 		 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" rel="stylesheet"> 
-		 {{ HTML::style('css/animate.css/animate.min.css') }}
-		 {{ HTML::style('css/Font-Awesome/css/font-awesome.min.css') }}
+		 {!! HTML::style('css/animate.css/animate.min.css') !!}
+		 {!! HTML::style('css/Font-Awesome/css/font-awesome.min.css') !!}
 		<link href="{!! asset('css/bootstrap.min.css') !!}" rel="stylesheet">
 		<link href="{!! asset('css/style.css') !!}" rel="stylesheet">
 		<link href="{!! asset('css/jquery-ui.min.css') !!}" rel="stylesheet">
