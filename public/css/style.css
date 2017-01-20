@@ -272,10 +272,12 @@ a.learn-more:hover{
 	 padding-top:47px;
 	 z-index:0;
 }
-.container{
-	margin-left:5% !important;
-	margin-right:5% !important;
-	width:1286px !important;
+
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1300px;
+  }
 }
 .rowPinkRibbon{
 	 position:relative;
