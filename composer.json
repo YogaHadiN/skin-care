@@ -9,11 +9,7 @@
         "laravel/framework": "5.2.*",
          "laravelcollective/html": "5.2.*",
          "dog-ears/crud-d-scaffold": "1.*",
-         "barryvdh/laravel-dompdf": "0.6.*",
-        "filp/whoops": "^2.1",
-        "barryvdh/laravel-debugbar": "^2.2",
         "predis/predis": "^1.1",
-        "watson/rememberable": "^1.0",
         "graham-campbell/flysystem": "^3.4",
 		"league/flysystem-aws-s3-v3": "^1.0",
 		"league/flysystem-azure": "^1.0",
@@ -41,9 +37,11 @@
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
+		"barryvdh/laravel-debugbar": "^2.2",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
         "symfony/css-selector": "2.8.*|3.0.*",
+        "filp/whoops": "^2.1",
         "symfony/dom-crawler": "2.8.*|3.0.*"
     },
     "autoload": {

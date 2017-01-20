@@ -17,3 +17,6 @@ Route::get('/', function () {
 Route::get('this', function () {
     return view('home.this');
 });
+Route::get('this/is', function () {
+	return ' oyeee';
+});
