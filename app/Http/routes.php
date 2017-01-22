@@ -14,9 +14,9 @@
 Route::get('/', function () {
     return view('home.index');
 });
-Route::get('this', function () {
-    return view('home.this');
+Route::get('about', function () {
+    return view('about.index');
 });
-Route::get('this/is', function () {
-	return ' oyeee';
+Route::get('service', function () {
+    return view('service.index');
 });
