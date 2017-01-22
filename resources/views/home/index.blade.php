@@ -66,7 +66,7 @@ Klinik Jati Elok | Home
 <div class="pink-ribbon-text positionAbsolute">
 	<div class="container">
 		<div class="row rowPinkRibbon colorWhite">
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pink-ribbon-item colPinkRibbon">
+			<div class="col-xs12  col-sm-4 col-md-4 col-lg-4 pink-ribbon-item colPinkRibbon">
 				<i class="fa fa-flask fa-5 pink-icon" aria-hidden="true"></i>
 				<h2 class="pink-caption">Latest Technology</h2>
 				<br />
@@ -74,7 +74,7 @@ Klinik Jati Elok | Home
 				<br />
 				<a class="learn-more" href=""><h5>LEARN MORE</h5></a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pink-ribbon-center colPinkRibbon">
+			<div class="col-xs12  col-sm-4 col-md-4 col-lg-4 pink-ribbon-center colPinkRibbon">
 				<i class="fa fa-certificate pink-icon" aria-hidden="true"></i>
 				<h2 class="pink-caption">Certified Institute</h2>
 				<br />
@@ -82,7 +82,7 @@ Klinik Jati Elok | Home
 				<br />
 				<a class="learn-more" href=""><h5>LEARN MORE</h5></a>
 			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pink-ribbon-item colPinkRibbon">
+			<div class="col-xs12  col-sm-4 col-md-4 col-lg-4 pink-ribbon-item colPinkRibbon">
 				<i class="fa fa-stethoscope pink-icon" aria-hidden="true"></i>
 				<h2 class="pink-caption">Best Doctor</h2>
 				<br />

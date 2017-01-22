@@ -310,10 +310,10 @@ a.learn-more:hover{
 	color:white;
 	opacity:0;
 }
-.treatment-slider .slick-slide:hover p{
+.treatment-slider .border-gallery:hover p{
 	opacity:1;
 }
-.treatment-slider .slick-slide:hover img{
+.treatment-slider .border-gallery:hover img{
 	transform:scale(1.2);
 	transition: all 0.3s ease 0s;
 }
@@ -1036,4 +1036,7 @@ color:#639EDB;
 }
 .fadeInUpEffect{
 	 position:relative;
+}
+#service h2{
+	 padding-bottom:16px;
 }

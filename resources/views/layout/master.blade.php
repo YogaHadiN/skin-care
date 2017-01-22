@@ -7,17 +7,21 @@
 		 <link href="https://fonts.googleapis.com/css?family=Alegreya|Monda|Taviraj" rel="stylesheet"> 
 		 <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet"> 
 		 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" rel="stylesheet"> 
-		 {!! HTML::style('css/animate.css/animate.min.css') !!}
-		 {!! HTML::style('css/Font-Awesome/css/font-awesome.min.css') !!}
-		<link href="{!! asset('css/bootstrap.min.css') !!}" rel="stylesheet">
+		 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"> 
+		 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+		<!-- Add the slick-theme.css if you want default styling -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
 		<link href="{!! asset('css/style.css') !!}" rel="stylesheet">
-		<link href="{!! asset('css/jquery-ui.min.css') !!}" rel="stylesheet">
-		<link href="{!! asset('css/slick.css') !!}" rel="stylesheet">
-		<link href="{!! asset('css/slick-theme.css') !!}" rel="stylesheet">
 		@yield('head')
 	</head>
 	<body>
-		<div class="top">
+		<div class="top hidden-xs">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
@@ -282,21 +286,16 @@
 				Copy Right 2015 All Right Reserved
 			</div>
 		</div>
-			{!! HTML::script('js/jquery-2.1.1.js')!!}
-			{!! HTML::script('js/bootstrap.min.js')!!}
-			{!! HTML::script('js/sticky/jquery.sticky.js')!!}
-			{!! HTML::script('js/plugins/metisMenu/jquery.metisMenu.js')!!}
-			{!! HTML::script('js/plugins/slimscroll/jquery.slimscroll.min.js')!!}
-			{!! HTML::script('js/plugins/jeditable/jquery.jeditable.js')!!}
-			{!! HTML::script('js/inspinia.js')!!}
-			{!! HTML::script('js/slick/slick/slick.min.js')!!}
-			{!! HTML::script('js/plugins/pace/pace.min.js')!!}
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js" type="text/javascript" charset="utf-8"></script>
 			<script type="text/javascript" charset="utf-8">
 				//efect menu 
 				$('.fadeInUpEffect').addClass('animated');
 				$('.fadeInUpEffect').addClass('transparent');
-			  fadeInUpTemplate();
-			  fadeInTemplate();
+				fadeInTemplate();
+				fadeInUpStart();
 				$('.head-menu').sticky({
 					 topSpacing:0
 				});
@@ -322,7 +321,7 @@
 						if( bottom_of_window > bottom_of_object ){
 							$(this).removeClass('transparent').addClass('fadeIn');								
 							$(this).animate({
-								bottom: '20px'
+								bottom: '0px'
 							}, 1500);
 						}
 					}); 
@@ -335,6 +334,10 @@
 							$(this).removeClass('transparent').addClass('fadeIn');								
 						}
 					}); 
+				}
+				function fadeInUpStart(){
+				  $('.fadeInUpEffect').css('bottom', '-20px');
+				  fadeInUpTemplate();
 				}
 
 
