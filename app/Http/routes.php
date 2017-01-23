@@ -20,3 +20,6 @@ Route::get('about', function () {
 Route::get('service', function () {
     return view('service.index');
 });
+Route::get('test', function () {
+    return view('home.test');
+});

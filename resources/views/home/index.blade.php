@@ -13,7 +13,6 @@ Klinik Jati Elok | Home
 		  <strong>Home</strong>
 	  </li>
 </ol>
-
 @stop
 @section('article') 
 <div class="navigation">
@@ -22,30 +21,60 @@ Klinik Jati Elok | Home
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				{{--<li data-target="#carousel-example-generic" data-slide-to="1"></li>--}}
+				<li data-target=l-example-generic" data-slide-to="1"></li>
 			</ol>
-			<!-- Wrapper for slides -->
-
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<div class="leftColumn">
-						<div class="animated wellcome_to transparent">
-							Welcome To
-						</div>
-						<div class="skin_beauty animated transparent">
-							<span class="skin">Skin</span>
-							<span class="beauty">Beauty</span> <br /> <br /><br />
-							<div class="animated promo_button transparent">
-								<a class="jumbo-button" href="http://www.google.com">Lihat Promo Terakhir</a>
+					<img src="{{ url('img/slider-item-1-1.png') }}" alt="..." class="main-img efect transparent">
+					<div class="carousel-caption">
+						<div class="leftColumn">
+							<div class="wellcome_to transparent efect">
+								Welcome To
+							</div>
+							<div class="skin_beauty transparent efect">
+								<span class="skin">Skin</span>
+								<span class="beauty">Beauty</span> <br /> <br /><br />
+								<div class="promo_button transparent efect">
+									<a class="jumbo-button" href="http://www.google.com">Lihat Promo Terakhir</a>
+								</div>
 							</div>
 						</div>
 					</div>
-					<img src="{{ url('img/slider-item-1-1.png') }}" alt="..." class="animated main-img transparent">
+				</div>
+				<div class="item">
+					<img src="{{ url('img/slider-item-2-1.jpg') }}" alt="..." class="full-width">
 					<div class="carousel-caption">
-						...
+						<div class="caption-2">
+							<div class="wellcome_to transparent efect">
+								Welcome To
+							</div>
+							<div class="skin_beauty transparent efect">
+								<span class="skin">Skin</span>
+								<span class="beauty">Beauty</span> <br /> <br /><br />
+								<div class="promo_button transparent efect">
+									<a class="jumbo-button" href="http://www.google.com">Lihat Promo Terakhir</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				...
+				<div class="item">
+					<img src="{{ url('img/slider-item-3-1.jpg') }}" alt="..." class="full-width">
+					<div class="carousel-caption">
+						<div class="caption-3">
+							<div class="wellcome_to transparent efect">
+								Welcome To
+							</div>
+							<div class="skin_beauty transparent efect">
+								<span class="skin">Skin</span>
+								<span class="beauty">Beauty</span> <br /> <br /><br />
+								<div class="promo_button transparent efect">
+									<a class="jumbo-button" href="http://www.google.com">Lihat Promo Terakhir</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<!-- Controls -->
@@ -348,7 +377,6 @@ Klinik Jati Elok | Home
 							@include('layout.testimonial', [
 								'img' => 'testimonial-1.jpg',
 								'name' => 'Ricardo Goff'
-
 							])
 							@include('layout.testimonial', [
 								'img' => 'testimonial-2.jpg',
@@ -357,7 +385,6 @@ Klinik Jati Elok | Home
 							@include('layout.testimonial', [
 								'img' => 'testimonial-3.jpg',
 								'name' => 'Jennifer Dawn'
-
 							])
 						</div>
 					</div>
@@ -476,18 +503,36 @@ Klinik Jati Elok | Home
 @section('footer') 
 <script type="text/javascript" charset="utf-8">
 	fadeIn();
+    $("#carousel-example-generic").on('slid.bs.carousel', function () {
+		$('.item:not(.active) .efect').each(function(){
+			if( $(this).hasClass('animated') ){
+				$(this).removeClass('animated');
+			}
+			if( $(this).hasClass('fadeIn') ){
+				$(this).removeClass('fadeIn');
+			}
+			if( $(this).hasClass('fadeInUp') ){
+				$(this).removeClass('fadeInUp');
+			}
+			if( !$(this).hasClass('transparent') ){
+				$(this).addClass('transparent');
+			}
+		});
+		fadeIn();
+    });
+
 	function fadeIn(){
 		setTimeout(function(){
-			$('.main-img').removeClass("transparent").addClass('fadeIn');
+			$('.item.active .main-img').removeClass("transparent").addClass('animated fadeIn');
 		}, 500);
 		setTimeout(function(){
-			$('.wellcome_to').removeClass('transparent').addClass('fadeIn');
+			$('.item.active .wellcome_to').removeClass('transparent').addClass('animated fadeIn');
 		}, 1000);
 		setTimeout(function(){
-			$('.skin_beauty').removeClass("transparent").addClass('fadeIn');
+			$('.item.active .skin_beauty').removeClass("transparent").addClass('animated fadeIn');
 		}, 1500);
 		setTimeout(function(){
-			$('.promo_button').removeClass('transparent').addClass('fadeInUp');
+			$('.item.active .promo_button').removeClass('transparent').addClass('animated fadeInUp');
 		}, 2000);
 	}
 	  $('.treatment-slider').slick({
