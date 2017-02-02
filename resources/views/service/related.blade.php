@@ -1,6 +1,6 @@
 <div class="treatment-related">
-	<img src="{{ url('img/skin-facial/'. $img) }}" class="img-rounded" alt="Responsive image">
-	<div class="treatment-related-caption  palatino">
+	<img src="{{ url('img/skin-facial/'. $img) }}" class="full-width" alt="Responsive image">
+	<div class="treatment-related-caption full-width palatino">
 		<div class="row">
 			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-pink text-left text-pink">
 				Mud Therapy

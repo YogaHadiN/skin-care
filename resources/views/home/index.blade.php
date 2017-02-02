@@ -1,5 +1,4 @@
 @extends('layout.master')
-
 @section('title') 
 Klinik Jati Elok | Home
 @stop

@@ -24,11 +24,10 @@ Klinik Jati Elok | Facial Therapy
 		'title' => 'Treatment Detail',
 		'subtitle' => 'Facial Spa',
 	])
-<div class="treatment-detail">
+<div class="treatment-detail rowMargin">
 	<div class="container">
-		<div class="row rowMargin">
 			<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-				<img src="{{ url('img/skin-facial/photodune-8600513-peaceful-brunette-getting-facial-from-beauty-therapist-in-the-health-spa-m.jpg') }}" class="img-rounded" alt="Responsive image">
+				<img src="{{ url('img/skin-facial/photodune-8600513-peaceful-brunette-getting-facial-from-beauty-therapist-in-the-health-spa-m.jpg') }}" class="img-rounded full-width" alt="Responsive image">
 			</div>
 			<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 				<h2 class='palatino text-pink'>Treatment Info</h2>
@@ -66,26 +65,27 @@ Klinik Jati Elok | Facial Therapy
 				<p class='text-grey text-treatment-detail'>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Vivamus sagittis lacus vel augue laoreet rutrum faucibus. Integer legentibus erat a ante historiarum dapibus. At nos hinc posthac, sitientis piros Afros. Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Lorem ipsum dolor.</p>
 			</div>
 		</div>
-		<div class="row rowMargin">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<h2 class='palatino'>Related Treatment</h2>
-				<div class="row">
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-						@include('service.related', ['img' => 'photodune-5179310-male-plastic-surgeon-with-patient-m-400x300.jpg'])
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-						@include('service.related', ['img' => 'photodune-7064054-woman-face-and-beautician-hands-with-syringes-m-400x300.jpg'])
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-						@include('service.related', ['img' => 'Fotolia_24881759_Subscription_Monthly_XXL-400x300.jpg'])
-					</div>
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-						@include('service.related', ['img' => 'photodune-3019155-chocolate-mask-facial-spa-beauty-spa-salon-m-400x300.jpg'])
+		<div class="container">
+			<div class="row rowMargin">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2 class='palatino'>Related Treatment</h2>
+					<div class="row">
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+							@include('service.related', ['img' => 'photodune-5179310-male-plastic-surgeon-with-patient-m-400x300.jpg'])
+						</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+							@include('service.related', ['img' => 'photodune-7064054-woman-face-and-beautician-hands-with-syringes-m-400x300.jpg'])
+						</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+							@include('service.related', ['img' => 'Fotolia_24881759_Subscription_Monthly_XXL-400x300.jpg'])
+						</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+							@include('service.related', ['img' => 'photodune-3019155-chocolate-mask-facial-spa-beauty-spa-salon-m-400x300.jpg'])
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
 	</div>
 </div>
 @stop

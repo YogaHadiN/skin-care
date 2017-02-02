@@ -23,6 +23,6 @@ Route::get('service', function () {
 Route::get('service/facial', function () {
     return view('service.facial');
 });
-Route::get('test', function () {
-    return view('home.test');
+Route::get('faq', function () {
+    return view('faq.index');
 });

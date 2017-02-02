@@ -1,5 +1,4 @@
 @extends('layout.master')
-
 @section('title') 
 Klinik Jati Elok | Frequently Asked Question
 @stop
@@ -15,8 +14,6 @@ Klinik Jati Elok | Frequently Asked Question
 	</ol>
 @stop
 @section('head') 
-<style type="text/css" media="all">
-</style>
 @stop
 @section('article') 
 @include('service.head', [
@@ -31,7 +28,7 @@ Klinik Jati Elok | Frequently Asked Question
 				  <div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="headingOne">
 					  <h4 class="panel-title">
-						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<a role="button" class="no-decoration" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 							Bibendum Porta Fermentum?
 						</a>
 					  </h4>
@@ -55,7 +52,7 @@ Klinik Jati Elok | Frequently Asked Question
 				  <div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="headingTwo">
 					  <h4 class="panel-title">
-						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<a class="collapsed no-decoration" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 						Praesent commodo cursus magna, vel scelerisque nisl consectetur et?
 						</a>
 					  </h4>
@@ -79,7 +76,7 @@ Klinik Jati Elok | Frequently Asked Question
 				  <div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="headingThree">
 					  <h4 class="panel-title">
-						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<a class="collapsed no-decoration" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 							Sollicitudin Fermentum Risus Commodo Nibh?
 						</a>
 					  </h4>
@@ -103,7 +100,7 @@ Klinik Jati Elok | Frequently Asked Question
 					<div class="panel panel-default">
 					<div class="panel-heading" role="tab" id="headingTwo">
 					  <h4 class="panel-title">
-						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<a class="collapsed no-decoration" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 							Sem Purus Bibendum Pharetra?
 						</a>
 					  </h4>
@@ -128,7 +125,7 @@ Klinik Jati Elok | Frequently Asked Question
 			</div>
 			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 web-features">
 				<h2 class="palatino text-center text-pink">FEATURES</h2>
-				<ul class="normal-list">
+				<ul class="normal-list faq-list">
 					<a href="#" class="xxxxx"><li> <span class="carret-icon">></span> Custom Skin</li></a>
 					<a href="#" class="xxxxx"><li> <span class="carret-icon">></span> Sidebar Size Customizable</li></a>
 					<a href="#" class="xxxxx"><li> <span class="carret-icon">></span> Optimized Code & SEO</li></a>
