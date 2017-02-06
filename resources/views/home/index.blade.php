@@ -341,7 +341,7 @@ Klinik Jati Elok | Home
 				</h3>
 				<div class="row pad-custom">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<img src="{{ url('img/recent-articles/Fotolia_31103810_resized-400x300.png') }}" alt="" class="img-video" /> 
+						<iframe width="360" height="202" src="https://www.youtube.com/embed/KDIQfTdKWuY" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 				<div class="row pad-custom">

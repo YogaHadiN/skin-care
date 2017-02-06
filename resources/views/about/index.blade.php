@@ -16,8 +16,6 @@ Klinik Jati Elok | About
 
 @stop
 @section('head') 
-<style type="text/css" media="all">
-</style>
 @stop
 @section('article') 
 <div class="about-us-head">
@@ -114,7 +112,10 @@ Klinik Jati Elok | About
 				<p>Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
 			</div>
 			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-				VISUAL
+				@include('about.skill-bar', ['skill_name' => 'Banking & Financial', 'bar_name' => 'banking'])
+				@include('about.skill-bar', ['skill_name' => 'Corporate Issue', 'bar_name' => 'corporate'])
+				@include('about.skill-bar', ['skill_name' => 'Family Law', 'bar_name' => 'family'])
+				@include('about.skill-bar', ['skill_name' => 'Real Estate', 'bar_name' => 'real_estate'])
 			</div>
 		</div>
 		<div class="row">

@@ -1106,3 +1106,37 @@ color:#639EDB;
 .no-decoration:hover, .no-decoration:focus{
 	 text-decoration:none;
 }
+.helvetica{
+	font-family:helvetica;
+}
+.skill-bar-group h5{
+	font-weight:bolder;
+}
+.skill-bar{
+	position:relative;
+	background-color:#d9d9d9;
+	height:10px;
+	width:100%;
+}
+.skill-bar-skill{
+	position:absolute;
+	background-color:#F374A9;
+	height:10px;
+	z-index:90;
+	width:2%;
+}
+/*.banking{*/
+	/*width:80%;*/
+/*}*/
+/*.corporate{*/
+	/*width:60%;*/
+/*}*/
+/*.family{*/
+	/*width:30%;*/
+/*}*/
+/*.real_estate{*/
+	/*width:70%;*/
+/*}*/
+.skill {
+	margin-bottom:30px;
+}

@@ -58,7 +58,7 @@
 						<nav id="bs-navbar" class="collapse navbar-collapse">
 							<ul class="nav navbar-nav">
 								<li class="active">
-									<a href="home">Home</a>
+									<a href="{{ url('/') }}">Home</a>
 										<ul>
 											<a class="" href="{{ url('about') }}">
 												<li>
@@ -324,6 +324,7 @@
 					  }
 					  fadeInUpTemplate();
 					  fadeInTemplate();
+					  skillBar();
 				});	
 				function fadeInUpTemplate(){
 					$('.fadeInUpEffect').each( function(i){
@@ -351,6 +352,35 @@
 				function fadeInUpStart(){
 				  $('.fadeInUpEffect').css('bottom', '-20px');
 				  fadeInUpTemplate();
+				}
+
+				function skillBar(){
+					$('.skill').each( function(i){
+						
+						var bottom_of_object = parseInt( $(this).offset().top ) + 100;
+						var bottom_of_window = $(window).scrollTop() + $(window).height();
+						
+						if( bottom_of_window > bottom_of_object ){
+							if( $(this).hasClass('banking') ){
+								$(this).find('span').animate({
+									width: '80%'
+								}, 1500);
+							} else if( $(this).hasClass('corporate') ) {
+								$(this).find('span').animate({
+									width: '60%'
+								}, 1500);
+							} else if( $(this).hasClass('family') ) {
+								$(this).find('span').animate({
+									width: '20%'
+								}, 1500);
+							} else if( $(this).hasClass('real_estate') ) {
+								$(this).find('span').animate({
+									width: '90%'
+								}, 1500);
+							}
+						}
+					}); 
+
 				}
 
 
