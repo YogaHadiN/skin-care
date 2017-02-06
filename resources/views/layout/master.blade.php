@@ -59,11 +59,23 @@
 							<ul class="nav navbar-nav">
 								<li class="active">
 									<a href="home">Home</a>
+										<ul>
+											<a class="" href="{{ url('about') }}">
+												<li>
+													About Us
+												</li>
+											</a>
+											<a class="" href="{{ url('faq') }}">
+												<li>
+													About Us
+												</li>
+											</a>
+										</ul>
 								</li>
 								<li>
-									<a href="home">Service</a>
+									<a href="{{ url('service') }}">Service</a>
 									<ul>
-										<a class="" href="#">
+										<a class="{{ url('service/facial') }}" href="#">
 											<li>
 												Facial
 											</li>
