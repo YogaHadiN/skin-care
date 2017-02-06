@@ -67,7 +67,7 @@
 											</a>
 											<a class="" href="{{ url('faq') }}">
 												<li>
-													About Us
+													FAQ
 												</li>
 											</a>
 										</ul>
